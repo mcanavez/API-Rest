@@ -14,10 +14,8 @@ before_deploy:
 deploy:
   provider: script
   script:
-    docker tag Rest-with-asp-net-mesaradionica:latest $DOCKER_USERNAME/rest-with-asp-net-udemy:$TRAVIS_JOB_ID;
-    docker push $DOCKER_USERNAME/Rest-with-asp-net-mesaradionica:$TRAVIS_JOB_ID;  
-    docker tag Rest-with-asp-net-mesaradionica-db:latest $DOCKER_USERNAME/rest-with-asp-net-udemy:$TRAVIS_JOB_ID;
-    docker push $DOCKER_USERNAME/Rest-with-asp-net-mesaradionica:$TRAVIS_JOB_ID;   
+    docker tag rest-with-asp-net-mesaradionica:latest $DOCKER_USERNAME/rest-with-asp-net-udemy:$TRAVIS_JOB_ID;
+    docker push $DOCKER_USERNAME/rest-with-asp-net-mesaradionica:$TRAVIS_JOB_ID;      
   on:
     branch: master
 notifications:
