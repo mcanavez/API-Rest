@@ -19,10 +19,10 @@ namespace RestWithASPNETMesaRadionica.Model
         public string Endereco  { get; set; }
 
         [Column("telefone")]
-        public string telefone { get; set; }
+        public string Telefone { get; set; }
 
         [Column("celular")]
-        public string celular { get; set; }
+        public string Celular { get; set; }
 
         [Column("data_aniversario")]
         public DateTime DataNascimento { get; set; }

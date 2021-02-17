@@ -36,6 +36,7 @@ namespace RestWithASPNETMesaRadionica.Controllers
             var consulente = _consulente.FindById(id);
             if (consulente == null) return NotFound("Consulente not found!");
             return Ok(consulente);
+                        
 
         }
 
